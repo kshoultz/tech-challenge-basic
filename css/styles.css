@@ -41,6 +41,12 @@ header {
   height: 73px;
   margin-left: 4px;
 }
+body {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
 
 /* Main page body container: */
 .mwi-body-container {
