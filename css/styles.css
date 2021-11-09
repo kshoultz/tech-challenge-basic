@@ -1,8 +1,9 @@
 html, body { height: 100% }
-html, body, p, div, h1, h2, h3, h4, span {   
-    font-family: 'Poppins', sans-serif !important;
+html, body, p, div, h1, h2, h3, h4, span, textarea, input {   
+    font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 14px;
+    /* letter-spacing: 0.5px; */
     line-height: 30px;
     margin: 0;
     padding: 0;
@@ -71,7 +72,7 @@ header {
 .mwi-white-container {
   background-color: #FFFFFF;
   color: #858585;
-  padding: 0 94px;
+  padding: 0 64px;
 }
 
 /* Main page body container: */
@@ -87,17 +88,22 @@ header {
 }
 .mwi-copy-section h1, 
 .mwi-copy-section .mwi-underline {
-  font-weight: 700;
   font-size: 46px;
   line-height: 46px;
   letter-spacing: 1px;
-  margin-top: 74px; 
-  margin-bottom:43px; 
+  font-weight: 700;
+  margin-top: 74px;
+  margin-bottom:43px;
   color: #FFFFFF;
 }
-.mwi-underline{
+.mwi-underline {
   border-bottom: solid 4px #DEBF79;
   padding: 4px 0 3px 2px;
+}
+.mwi-copy-section p {
+  font-size: 16px;
+  line-height: 25px;
+  margin-bottom: 14px;
 }
 
 /* Card section */
@@ -110,29 +116,37 @@ header {
 .mwi-card {
   background-color: #FFFFFF !important;
   border-radius: 3px;
-  padding: 0 50px 13px 61px;
+  padding: 0 50px 29px 50px;
+  min-width: 300px;
 }
 .mwi-card-icon {
   height: 158px;
-  width: 288px;
+  width: 277px;
   display:flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
 }
-.mwi-card h2 {
+.mwi-card h2,
+.mwi-white-container h2
+ {
   font-size: 35px;
-  font-weight: 700;
-  letter-spacing: 0.5px;
   line-height: 41px;
+  letter-spacing: 0.5px;
+  font-weight: 700;
   color: #000000;
   white-space: nowrap;
   margin-bottom: 21px;
 }
+.mwi-card h2 {
+  margin-left:11px;
+}
 .mwi-card p {
   text-align: justify;
-  line-height: 25px;
+  line-height: 25px; 
+  margin-left: 11px;
+  margin-bottom: 11px;
 }
 
 /* Form Styles */
@@ -141,32 +155,53 @@ header {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: stretch;
+  align-items: stretch;
+  align-content: stretch;
+
   margin:0;
   padding:0;
+  min-width: 650px;
 }
-.mwi-form input {
-  margin: 10px;
-  padding: 10px;
+.mwi-fields-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: stretch;
+  column-gap: 20px;
+}
+.mwi-form input, 
+.mwi-form textarea {
+  margin: 10px 0;
+  padding: 10px 20px;
+  min-width: 255px;
   color: #858585;
   background-color: #f4f4f4;
   border: none;
 }
+.mwi-form textarea { min-width: 575px; }
 
 /* Toolbar styles: */
 .mwi-toolbar {
+  width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
-  padding: 21px 24px 26px 24px;
+  padding:10px;
 }
-.mwi-toolbar-button { /* TODO: Consider actually using a button. */
+.mwi-toolbar a, 
+.mwi-toolbar button { 
+  white-space: nowrap;
+  line-height: 21px;
+  font-weight: 500;
   background-color: #DEBF79;
   color: #FFFFFF;
   padding: 12px 28px;
-  white-space: nowrap;
-  line-height: 21px;
-
+  border: none;
+  cursor: pointer;
+}
+.mwi-toolbar button {
+  min-width: 130px;
 }
 
 /*
