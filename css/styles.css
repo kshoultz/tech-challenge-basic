@@ -1,3 +1,4 @@
+html, body { height: 100% }
 html, body, p, div, h1, h2, h3, h4, span {   
     font-family: 'Poppins', sans-serif !important;
     font-weight: 500;
@@ -25,6 +26,12 @@ header {
   margin-bottom: 12px; /* add extra space for the bottom of the header */
 }
 
+.mwi-default-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
 .mwi-navigation {
   padding:0 0 6px 0;
 }
@@ -41,17 +48,36 @@ header {
   height: 73px;
   margin-left: 4px;
 }
-body {
+.mwi-main-layout {
   display:flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
 }
 
+.mwi-split-layout {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: stretch;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+.mwi-half { width: 50%; }
+.mwi-full-width-content { width: 1252px; }
+.mwi-half-width-content { width: 626px; }
+
+.mwi-white-container {
+  background-color: #FFFFFF;
+  color: #858585;
+  padding: 0 94px;
+}
+
 /* Main page body container: */
 .mwi-body-container {
   padding: 0 94px;
-  width: 1252px;
+  /*  */
 }
 
 /* Marketing Copy Section */
@@ -111,8 +137,19 @@ body {
 
 /* Form Styles */
 .mwi-form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: stretch;
   margin:0;
   padding:0;
+}
+.mwi-form input {
+  margin: 10px;
+  padding: 10px;
+  color: #858585;
+  background-color: #f4f4f4;
+  border: none;
 }
 
 /* Toolbar styles: */
