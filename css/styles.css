@@ -68,13 +68,12 @@ header {
   flex-direction: row;
   justify-content: center;
   align-items: stretch;
-  /* align-content: center; */
 }
 @media (min-width: 1260px) {
   .mwi-split-layout {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: stretch;
   }
 }
 @media (max-width: 1259px) {
@@ -103,6 +102,20 @@ header {
   }
 }
 /* Body container END */
+
+/* Dark container: */
+.mwi-dark-container {
+  background-color: #FFFFFF;
+  color: #858585; 
+  padding: 0 64px;
+}
+@media (max-width: 1259px) {
+  .mwi-dark-container {
+    padding: 0 10px;
+    max-width: 420px;
+  }
+}
+/* Dark container END */
 
 /* White container: */
 .mwi-white-container {
