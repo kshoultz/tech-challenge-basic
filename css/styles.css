@@ -1,4 +1,4 @@
-/* standard elemets: */
+/* Standard elemets: */
 html, body { height: 100% }
 html, body, p, div, h1, h2, h3, h4, span, textarea, input {   
     font-family: 'Poppins', sans-serif;
@@ -16,9 +16,6 @@ a {
   color: #DEBF79;
   text-decoration: none;
 }
-/**/
-
-/* html5 elements: */
 header {
   display: flex;
   flex-direction: row;
@@ -28,15 +25,9 @@ header {
   height: 177px; /* Equalized height for centering logo vertically. */
   margin-bottom: 12px; /* add extra space for the bottom of the header */
 }
-/**/
+/* Standard elemets END  */
 
-/* mwi classes: */
-.mwi-default-flex {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-}
-
+/* MWI Logo: */
 .mwi-logo {
   width: 350px;
   height: 73px;
@@ -48,7 +39,9 @@ header {
     height: 53px;
   }
 }
+/* MWI Logo END. */
 
+/* MWI Navigation: */
 .mwi-navigation {
   padding:0 0 6px 0;
 }
@@ -59,7 +52,9 @@ header {
   font-weight: 700;
   line-height: 18px;
 }
+/* MWI Navigation End. */
 
+/* Landing Layout: */ 
 .mwi-main-layout {
   display:flex;
   flex-direction: row;
@@ -67,37 +62,51 @@ header {
   justify-content: center;
 }
 
+/* Split Layout: */ 
 .mwi-split-layout {
   display:flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: stretch;
   align-items: stretch;
   align-content: stretch;
 }
+@media (max-width: 1259px) {
+  .mwi-split-layout {
+    flex-wrap: wrap;
+  }
+}
+.mwi-split-half-width {
+  width: 532px;
+  min-width: 532px;
+}
+/* Split Layout END */ 
 
-.mwi-half { width: 50%; }
-.mwi-full-width-content { width: 1252px; }
-.mwi-half-width-content { width: 626px; }
+/* Body container: */
+.mwi-body-container {
+  padding: 0 94px; /* 720 -94 -94 =   */
+  max-width: 1260px
+}
+@media (max-width: 1259px) {
+  .mwi-body-container {
+    padding: 0 10px;
+    max-width: 420px;
+  }
+}
+/* Body container END */
 
+/* White container: */
 .mwi-white-container {
   background-color: #FFFFFF;
   color: #858585;
   padding: 0 64px;
 }
-
-/* Main page body container: */
-.mwi-body-container {
-  padding: 0 94px;
-  max-width: 1260px
-}
-
 @media (max-width: 1259px) {
-  .mwi-body-container {
+  .mwi-white-container {
     padding: 0 10px;
-    max-width: 420px
+    max-width: 420px;
   }
 }
+/* White container END */
 
 /* Marketing Copy Section */
 .mwi-copy-section {
@@ -123,12 +132,12 @@ header {
   line-height: 25px;
   margin-bottom: 14px;
 }
+/* Marketing Copy END */
 
 /* Card section */
 .mwi-card-layout {
   padding:10px;
 }
-
 @media (min-width: 1260px) {
   .mwi-card-layout {
     display: flex;
@@ -137,7 +146,6 @@ header {
     align-items: center;
   }
 }
-
 @media (max-width: 1259px) {
   .mwi-card-layout {
     display: flex;
@@ -147,6 +155,7 @@ header {
   }
 }
 
+/* MWI Card: */
 .mwi-card {
   background-color: #FFFFFF !important;
   border-radius: 3px;
@@ -183,20 +192,31 @@ header {
   margin-left: 11px;
   margin-bottom: 11px;
 }
+/* MWI Card: */
 
-/* Form Styles */
+/* MWI Form */
 .mwi-form {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: stretch;
   align-items: stretch;
   align-content: stretch;
 
   margin:0;
   padding:0;
-  min-width: 650px;
 }
+@media (max-width: 1259px) {
+  .mwi-form {
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 1260px) {
+  .mwi-form {
+    /* flex-wrap: nowrap; */
+    width: 650px;
+  }
+}
+
 .mwi-fields-container {
   display: flex;
   flex-direction: row;
@@ -214,8 +234,9 @@ header {
   border: none;
 }
 .mwi-form textarea { min-width: 575px; }
+/* MWI Form END */
 
-/* Toolbar styles: */
+/* MWI Toolbar: */
 .mwi-toolbar {
   width: 100%;
   display: flex;
@@ -238,17 +259,4 @@ header {
 .mwi-toolbar button {
   min-width: 130px;
 }
-
-/*
-
-  - **Fonts**: https://fonts.google.com/specimen/Poppins
-    - Bold
-    - Medium
-  - **Primary Colors**:
-    - Gold: #DEBF79
-    - Dark Gray (background): #222222
-    - Mid Gray (text): #858585
-    - Light Gray (inputs): #F5F5F5
-    - Red: #800000
-
-*/
+/* MWI Toolbar END */
