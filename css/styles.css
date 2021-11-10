@@ -66,15 +66,25 @@ header {
 .mwi-split-layout {
   display:flex;
   flex-direction: row;
-  justify-content: stretch;
+  justify-content: center;
   align-items: stretch;
-  align-content: stretch;
+  /* align-content: center; */
+}
+@media (min-width: 1260px) {
+  .mwi-split-layout {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
 }
 @media (max-width: 1259px) {
   .mwi-split-layout {
-    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
+
 .mwi-split-half-width {
   width: 532px;
   min-width: 532px;
@@ -213,7 +223,7 @@ header {
 @media (min-width: 1260px) {
   .mwi-form {
     /* flex-wrap: nowrap; */
-    width: 650px;
+    /* width: 650px; */
   }
 }
 
@@ -228,12 +238,14 @@ header {
 .mwi-form textarea {
   margin: 10px 0;
   padding: 10px 20px;
-  min-width: 255px;
+  /* min-width: 255px; */
   color: #858585;
   background-color: #f4f4f4;
   border: none;
 }
-.mwi-form textarea { min-width: 575px; }
+.mwi-form textarea { 
+  /* min-width: 575px;  */
+}
 /* MWI Form END */
 
 /* MWI Toolbar: */
