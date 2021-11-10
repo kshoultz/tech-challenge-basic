@@ -25,11 +25,30 @@ header {
   height: 177px; /* Equalized height for centering logo vertically. */
   margin-bottom: 12px; /* add extra space for the bottom of the header */
 }
+@media (max-width: 1439px) {
+  header {
+    height:47px;
+    margin:29px 34px 21px 35px;
+  }
+}
 /* Standard elemets END  */
 
-/* Layout Definitions: */
+/* MWI Logo: */
+.mwi-logo {
+  width: 350px;
+  height: 73px;
+  margin-left: 4px;
+}
+@media (max-width: 1439px) {
+  .mwi-logo {
+    width: 225px;
+    height: 47px;
+    margin-left: 0;
+  }
+}
+/* MWI Logo END. */
 
-/* Landing Layout: */ 
+/* Layout Definitions: */
 .mwi-full-layout {
   display:flex;
   flex-direction: row;
@@ -41,7 +60,7 @@ header {
   padding: 0 94px; /* 720 -94 -94 =   */
   max-width: 1260px
 }
-@media (max-width: 1259px) {
+@media (max-width: 1439px) {
   .mwi-full-content {
     padding: 0 10px;
     width: 100%;
@@ -53,14 +72,14 @@ header {
   display:flex;
   flex-direction: row;
 }
-@media (min-width: 1240px) {
+@media (min-width: 1440px) {
   .mwi-split-layout {
     flex-direction: row;
     align-items: stretch;
     justify-content: center;
   }
 }
-@media (max-width: 1239px) {
+@media (max-width: 1439px) {
   .mwi-split-layout {
     flex-direction: column;
     align-items: center;
@@ -72,13 +91,13 @@ header {
   flex-direction: row;
   flex-wrap: nowrap;
 }
-@media (min-width: 1240px) {
+@media (min-width: 1440px) {
   .mwi-split-dark-container {
     justify-content: flex-end;
     width:50%;
   }
 }
-@media (max-width: 1239px) {
+@media (max-width: 1439px) {
   .mwi-split-dark-container {
     justify-content: center;
     width:100%;
@@ -91,19 +110,19 @@ header {
   flex-wrap: nowrap;
   background-color:#FFFFFF;
 }
-@media (min-width: 1240px) {
+@media (min-width: 1440px) {
   .mwi-split-light-container {
     width:50%;
   }
 }
-@media (max-width: 1239px) {
+@media (max-width: 1439px) {
   .mwi-split-light-container {
     width:100%;
     justify-content: center;
   }
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 1440px) {
   .mwi-dark-content
   {
     min-width: 487px;
@@ -111,7 +130,7 @@ header {
     width: 487px;
   }
 }
-@media (max-width: 1239px) {
+@media (max-width: 1439px) {
   .mwi-dark-content
    {
     width:100%;
@@ -119,7 +138,7 @@ header {
   }
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 1440px) {
   .mwi-light-content
   {
     min-width: 564px;
@@ -127,7 +146,7 @@ header {
     width: 564px;
   }
 }
-@media (max-width: 1239px) {
+@media (max-width: 1439px) {
   .mwi-light-content
    {
     width:100%;
@@ -136,53 +155,47 @@ header {
   }
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 1440px) {
   .mwi-dark-content {
     margin-left: 94px;
     padding-right: 140px;
     /* border:solid 1px #FF0000; */
   }
 }
-@media (max-width: 1239px) {
+@media (max-width: 1439px) {
   .mwi-dark-content {
     margin: 0 10px;
   }
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 1440px) {
   .mwi-light-content {
     margin-right: 94px;
     padding-left: 75px;
     /* border:solid 1px #0000FF; */
   }
 }
-@media (max-width: 1239px) {
+@media (max-width: 1439px) {
   .mwi-light-content {
     margin: 0 10px;
   }
 }
 /* Layout Definitions END */
 
-/* MWI Logo: */
-.mwi-logo {
-  width: 350px;
-  height: 73px;
-  margin-left: 4px;
-}
-@media (max-width: 1239px) {
-  .mwi-logo {
-    width: 225px;
-    height: 53px;
-    margin-left: 0;
-  }
-}
-/* MWI Logo END. */
-
 /* Marketing Copy Section */
 .mwi-copy-section {
   color: #FFFFFF;
   margin: 0 4px;
 }
+@media (max-width:1439px) 
+{
+  .mwi-copy-section {
+    margin: 0px; 
+    margin: 0 35px 64px 35px;
+    padding: 0px;
+  }
+}
+
 .mwi-copy-section h1, 
 .mwi-copy-section .mwi-underline {
   font-size: 46px;
@@ -192,6 +205,13 @@ header {
   margin-top: 74px;
   margin-bottom:43px;
   color: #FFFFFF;
+}
+@media (max-width:1439px) {
+  .mwi-copy-section h1, 
+  .mwi-copy-section .mwi-underline {
+    margin-top: 36px;
+    margin-bottom: 40px;
+  }
 }
 .mwi-underline {
   border-bottom: solid 4px #DEBF79;
@@ -206,7 +226,7 @@ header {
 
 /* MWI Navigation: */
 .mwi-navigation {
-  padding:0 0 6px 0;
+  /* padding:0 0 6px 0; */
 }
 .mwi-navigation a {
   margin: 0;
@@ -216,13 +236,13 @@ header {
   line-height: 18px;
 }
 
-@media (max-width: 1239px) {
+@media (max-width: 1439px) {
   .mwi-navigation-expanded {
     display: none;
   }
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 1440px) {
   .mwi-navigation-condensed {
     display: none;
   }
@@ -233,7 +253,7 @@ header {
 .mwi-card-layout {
   padding:10px;
 }
-@media (min-width: 1240px) {
+@media (min-width: 1440px) {
   .mwi-card-layout {
     display: flex;
     flex-direction: row;
@@ -241,11 +261,11 @@ header {
     align-items: center;
   }
 }
-@media (max-width: 1239px) {
+@media (max-width: 1439px) {
   .mwi-card-layout {
     display: flex;
     flex-direction: column;
-    row-gap: 20px;
+    row-gap: 8px;
     align-items: center;
   }
 }
@@ -257,14 +277,14 @@ header {
   border-radius: 3px;
   padding: 0 50px 29px 50px;
 }
-@media (min-width: 1240px) {
+@media (min-width: 1440px) {
   .mwi-card {
     min-width: 300px;
     width:300px;
     max-width: 300px;
   }
 }
-@media (max-width: 1239px) {
+@media (max-width: 1439px) {
   .mwi-card {
     width: 100%;
     max-width: 300px;
@@ -313,13 +333,13 @@ header {
   margin:0;
   padding:0;
 }
-@media (min-width: 1240px) {
+@media (min-width: 1440px) {
   .mwi-form {
     /* flex-wrap: nowrap; */
     /* width: 650px; */
   }
 }
-@media (max-width: 1239px) {
+@media (max-width: 1439px) {
   .mwi-form {
     flex-wrap: wrap;
   }
