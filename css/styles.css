@@ -1,9 +1,9 @@
+/* standard elemets: */
 html, body { height: 100% }
 html, body, p, div, h1, h2, h3, h4, span, textarea, input {   
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 14px;
-    /* letter-spacing: 0.5px; */
     line-height: 30px;
     margin: 0;
     padding: 0;
@@ -16,7 +16,9 @@ a {
   color: #DEBF79;
   text-decoration: none;
 }
+/**/
 
+/* html5 elements: */
 header {
   display: flex;
   flex-direction: row;
@@ -26,11 +28,25 @@ header {
   height: 177px; /* Equalized height for centering logo vertically. */
   margin-bottom: 12px; /* add extra space for the bottom of the header */
 }
+/**/
 
+/* mwi classes: */
 .mwi-default-flex {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+}
+
+.mwi-logo {
+  width: 350px;
+  height: 73px;
+  margin-left: 4px;
+}
+@media (max-width: 1259px) {
+  .mwi-logo {
+    width: 225px;
+    height: 53px;
+  }
 }
 
 .mwi-navigation {
@@ -44,11 +60,6 @@ header {
   line-height: 18px;
 }
 
-.mwi-logo {
-  width: 350px;
-  height: 73px;
-  margin-left: 4px;
-}
 .mwi-main-layout {
   display:flex;
   flex-direction: row;
@@ -59,7 +70,7 @@ header {
 .mwi-split-layout {
   display:flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: stretch;
   align-items: stretch;
   align-content: stretch;
@@ -78,7 +89,14 @@ header {
 /* Main page body container: */
 .mwi-body-container {
   padding: 0 94px;
-  /*  */
+  max-width: 1260px
+}
+
+@media (max-width: 1259px) {
+  .mwi-body-container {
+    padding: 0 10px;
+    max-width: 420px
+  }
 }
 
 /* Marketing Copy Section */
@@ -108,16 +126,33 @@ header {
 
 /* Card section */
 .mwi-card-layout {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  column-gap: 26px;
+  padding:10px;
 }
+
+@media (min-width: 1260px) {
+  .mwi-card-layout {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    align-items: center;
+  }
+}
+
+@media (max-width: 1259px) {
+  .mwi-card-layout {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+  }
+}
+
 .mwi-card {
   background-color: #FFFFFF !important;
   border-radius: 3px;
   padding: 0 50px 29px 50px;
   min-width: 300px;
+  width:300px;
 }
 .mwi-card-icon {
   height: 158px;
