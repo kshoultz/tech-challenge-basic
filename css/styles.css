@@ -257,7 +257,7 @@ header {
   border: none;
 }
 .mwi-form textarea { 
-  /* min-width: 575px;  */
+  min-width: 575px; 
 }
 /* MWI Form END */
 
