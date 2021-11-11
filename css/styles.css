@@ -117,7 +117,7 @@ header {
 }
 @media (max-width: 1439px) {
   .mwi-split-light-container {
-    width:100%;
+    /* width:100%; */
     justify-content: center;
   }
 }
