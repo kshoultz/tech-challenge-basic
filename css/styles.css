@@ -57,7 +57,7 @@ header {
 }
 
 .mwi-full-content {
-  padding: 0 94px; /* 720 -94 -94 =   */
+  padding: 0 94px; 
   max-width: 1260px
 }
 @media (max-width: 1439px) {
@@ -134,7 +134,8 @@ header {
   .mwi-dark-content
    {
     width:100%;
-    max-width: 487px;
+    /* max-width: 487px; */
+    max-width: 420px;
   }
 }
 
@@ -151,7 +152,8 @@ header {
    {
     width:100%;
     /* max-width: 564px; */
-    max-width: 487px;
+    /* max-width: 487px; */
+    max-width: 420px;
   }
 }
 
@@ -217,6 +219,20 @@ header {
   border-bottom: solid 4px #DEBF79;
   padding: 4px 0 3px 2px;
 }
+
+/* TODO: I don't like this :( */
+@media (min-width: 1440px) {
+  .mwi-copy-section .mwi-conditional-space {
+    margin-top: 170px;
+  }
+}
+@media (max-width: 1439px) {
+  .mwi-copy-section .mwi-conditional-space {
+    margin-top: 65px;
+  }
+}
+/* END */
+
 .mwi-copy-section p {
   font-size: 16px;
   line-height: 25px;
@@ -330,31 +346,56 @@ header {
   align-items: stretch;
   align-content: stretch;
 
-  margin:0;
   padding:0;
 }
 @media (min-width: 1440px) {
   .mwi-form {
     /* flex-wrap: nowrap; */
     /* width: 650px; */
+  margin:0;
   }
 }
 @media (max-width: 1439px) {
   .mwi-form {
     flex-wrap: wrap;
+    margin: 0 35px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .mwi-form h2 {
+    margin-top: 88px;
+  }
+}
+@media (max-width: 1439px) {
+  .mwi-form h2 {
+    margin-top: 50px;
   }
 }
 
 .mwi-fields-container {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: stretch;
-  column-gap: 20px;
+  width:100%;
+}
+@media (min-width: 1440px) {
+  .mwi-fields-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 1439px) {
+  .mwi-fields-container {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    row-gap: 20px;
+    justify-content: stretch;
+    justify-items: stretch;
+    align-items: stretch;
+  }
 }
 .mwi-form input, 
 .mwi-form textarea {
-  margin: 10px 0;
+  /* margin: 10px 0; */
   padding: 10px 20px;
   /* min-width: 255px; */
   color: #858585;
@@ -362,7 +403,7 @@ header {
   border: none;
 }
 .mwi-form textarea { 
-  min-width: 575px; 
+  /* min-width: 575px;  */
 }
 /* MWI Form END */
 

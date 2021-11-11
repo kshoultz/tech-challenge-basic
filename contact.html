@@ -24,7 +24,7 @@
                     </div>
                 </header>
                 <div class="mwi-copy-section">
-                    <h1 style="margin-top: 170px;">
+                    <h1 class="mwi-conditional-space">
                         <span class="mwi-underline">Heading</span> One
                     </h1>
                     <p>
@@ -41,14 +41,25 @@
         </div>
         <div class="mwi-split-light-container">
             <div class="mwi-light-content">
-                <header>
+                <header class="mwi-navigation-expanded">
                     <span></span>
-                    <div class="mwi-navigation mwi-navigation-expanded">
+                    <div class="mwi-navigation">
                         <a href="index.html">home</a>
                     </div>
                 </header>
-                <h2 style="margin-top: 88px;">Heading Two</h2><!-- margin top 88px extra on this layout. -->
-                
+                <form class="mwi-form">
+                    <h2>Heading Two</h2>
+                    <div class="mwi-fields-container">
+                        <input placeholder="First Name" />
+                        <input placeholder="Last Name" />
+                        <input placeholder="Title" />
+                        <input placeholder="Email" required="required" />
+                        <textarea placeholder="Message" rows="4"></textarea>
+                    </div>
+                    <div class="mwi-toolbar">
+                        <button>Submit</button>
+                    </div>
+                </form>
             </div>
         </div>
     </body>
