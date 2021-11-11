@@ -100,7 +100,7 @@ header {
 @media (max-width: 1439px) {
   .mwi-split-dark-container {
     justify-content: center;
-    width:100%;
+    /* width:100%; */
   }
 }
 
