@@ -358,7 +358,7 @@ header {
 @media (max-width: 1439px) {
   .mwi-form {
     flex-wrap: wrap;
-    margin: 0 35px;
+    margin: 0 35px 50px 35px;
   }
 }
 
@@ -391,6 +391,7 @@ header {
     justify-content: stretch;
     justify-items: stretch;
     align-items: stretch;
+    margin-bottom: 10px
   }
 }
 .mwi-form input, 
@@ -403,6 +404,7 @@ header {
   border: none;
 }
 .mwi-form textarea { 
+  height: 225px;
   /* min-width: 575px;  */
 }
 /* MWI Form END */
