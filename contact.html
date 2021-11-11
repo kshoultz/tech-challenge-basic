@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Contact Midwestern Interactive</title>
+        <meta charset="utf-8">
+        <meta 
+            name="viewport" 
+            content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>Midwestern Interactive</title>
 
         <!-- Import fonts: -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -11,18 +15,21 @@
 
         <!-- Import External Stylesheets -->
         <link rel="stylesheet" href="css/styles.css" />
+        
+        <!-- Import External Javascript: -->
+        <script src="js/main.js"></script>
+
     </head>
-    <!-- mwi-split-layout -->
     <body class="mwi-split-layout">
-        <!-- mwi-body-container -->
-        <div class="mwi-split-dark-container">
-            <div class="mwi-dark-content">
+        <div class="mwi-full-layout">
+            <div class="mwi-full-content">
                 <header>
                     <img src="images/Logo.png" class="mwi-logo" alt="Midwestern Interactive" />
-                    <div class="mwi-navigation mwi-navigation-condensed">
+                    <div class="mwi-navigation">
                         <a href="index.html">home</a>
                     </div>
                 </header>
+                
                 <div class="mwi-copy-section">
                     <h1 class="mwi-conditional-space">
                         <span class="mwi-underline">Heading</span> One
@@ -39,14 +46,9 @@
                 </div>
             </div>
         </div>
+            
         <div class="mwi-split-light-container">
             <div class="mwi-light-content">
-                <header class="mwi-navigation-expanded">
-                    <span></span>
-                    <div class="mwi-navigation">
-                        <a href="index.html">home</a>
-                    </div>
-                </header>
                 <form class="mwi-form">
                     <h2>Heading Two</h2>
                     <div class="mwi-fields-container">
@@ -62,5 +64,7 @@
                 </form>
             </div>
         </div>
+            
+        </body>
     </body>
 </html>
