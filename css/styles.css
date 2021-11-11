@@ -100,7 +100,7 @@ header {
 @media (max-width: 1439px) {
   .mwi-split-dark-container {
     justify-content: center;
-    /* width:100%; */
+    width:100%;
   }
 }
 
@@ -117,7 +117,7 @@ header {
 }
 @media (max-width: 1439px) {
   .mwi-split-light-container {
-    /* width:100%; */
+    width:100%;
     justify-content: center;
   }
 }
@@ -135,7 +135,7 @@ header {
    {
     width:100%;
     /* max-width: 487px; */
-    max-width: 420px;
+    /* max-width: 420px; */
   }
 }
 
@@ -150,10 +150,10 @@ header {
 @media (max-width: 1439px) {
   .mwi-light-content
    {
-    /* width:100%; */
+    width:100%;
     /* max-width: 564px; */
     /* max-width: 487px; */
-    max-width: 420px;
+    /* max-width: 420px; */
   }
 }
 
