@@ -21,16 +21,16 @@
 
     </head>
     <body style="background-color:black;">
-        <form class="mwi-form">
+        <form class="mwi-form" action="https://api.mwi.dev/contact">
             <div class="mwi-fields-container">
-                <input placeholder="First Name" />
-                <input placeholder="Last Name" />
-                <input placeholder="Title" />
-                <input placeholder="Email" required="required" />
-                <textarea placeholder="Message" rows="4"></textarea>
+                <input placeholder="First Name" name="first_name" />
+                <input placeholder="Last Name" name="last_name" />
+                <input placeholder="Title" name="title" />
+                <input placeholder="Email" name="email" required="required" />
+                <textarea placeholder="Message" name="message" rows="4"></textarea>
             </div>
             <div class="mwi-toolbar">
-                <button>Submit</button>
+                <input type="submit" value="submit" />
             </div>
         </form>
     </body>

@@ -449,7 +449,8 @@ li {
   padding:10px;
 }
 .mwi-toolbar a, 
-.mwi-toolbar button { 
+.mwi-toolbar button,
+input[type=submit] { 
   white-space: nowrap;
   line-height: 21px;
   font-weight: 500;
@@ -459,7 +460,8 @@ li {
   border: none;
   cursor: pointer;
 }
-.mwi-toolbar button {
+.mwi-toolbar button,
+input[type=submit] {
   min-width: 130px;
 }
 /* MWI Toolbar END */
