@@ -14,7 +14,7 @@ mwi.generateCandidatesList = function(){
         mwi.manifest = mwi.mergeCandidates(mwi.candidates[0], mwi.candidates[1]);
         mwi.manifest.forEach(function(mwiName, i) {
             let li = document.createElement('li');
-            li.innerHTML = '<a href="#">'+mwiName+'</a>';
+            li.innerHTML = '<a href="#mwi-bottom">'+mwiName+'</a>';
             ul.appendChild(li);
         });
     }
