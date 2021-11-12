@@ -8,11 +8,14 @@ mwi.mergeCandidates = function(array1, array2){
 };
 mwi.generateCandidatesList = function(){
     if (mwi.manifest) {
-        console.log('Thank you, but the list has already been made.')
+        alert('Thank you, but the list has already been made.');
     } else {
+        const ul = document.getElementById('mwi-list');
         mwi.manifest = mwi.mergeCandidates(mwi.candidates[0], mwi.candidates[1]);
-        console.log(mwi.manifest);
+        mwi.manifest.forEach(function(mwiName, i) {
+            let li = document.createElement('li');
+            li.innerHTML = '<a href="#">'+mwiName+'</a>';
+            ul.appendChild(li);
+        });
     }
 };
-
-// Initialize lists:

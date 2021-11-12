@@ -201,6 +201,48 @@ header {
     margin-top: 65px;
   }
 }
+
+/* MWI List */
+ul {
+  list-style-type: none;
+}
+@media (min-width: 1440px) {
+  ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 1439px) {
+  ul {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px !important;
+  }
+}
+ul, li, li a {
+  margin: 0;
+  padding: 0; 
+  color: #858585;
+  height: 26px;
+  font-size: 18px;
+}
+li {
+  margin: 10px 0;
+}
+li a {
+  border-left: solid 2px #222222;
+  padding: 0 24px;
+  white-space: nowrap;
+}
+li a:hover {
+  color: #DEBF79;
+  border-left: solid 2px #f4f4f4
+}
+li {
+
+}
 /* END */
 
 .mwi-copy-section p {
