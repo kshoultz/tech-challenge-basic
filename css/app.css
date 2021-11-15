@@ -1,5 +1,5 @@
 /* Standard elemets: */
-html, body { height: 100% }
+html, body, #__next, .mwi-split-layout { height: 100%; width:100%; }
 html, body, p, div, h1, h2, h3, h4, span, textarea, input {   
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
